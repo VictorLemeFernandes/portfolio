@@ -6,13 +6,13 @@
 }
 
 .apresentacaoCurriculoTitulo {
-    font-size: 22px;
+    font-size: 1.37rem;
     font-family: 'Krona One', sans-serif;
     margin-bottom: 0px;
 }
 
 .apresentacaoCurriculoCursoExperiencia {
-    font-size: 20px;
+    font-size: 1.25rem;
     font-family: 'Montserrat', sans-serif;
     margin-top: 5px;
 }
@@ -24,7 +24,7 @@
 }
 
 .apresentacaoDataFormacaoExp {
-    font-size: 18px;
+    font-size: 1.12rem;
     font-family: 'Montserrat', sans-serif;
 }
 
