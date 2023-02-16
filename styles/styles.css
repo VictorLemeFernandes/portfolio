@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+/* Variaveis globais */
+:root {
+    --corPrimaria: #2C3639;
+    --corSecundaria: #DCD7C9;
+    --corTerciaria: #A27B5C;
+    --corHover: #3F4E4F;
+
+    --fontePrimaria: 'Krona One', sans-serif;
+    --fonteSecundaria: 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--corPrimaria);
+    color: var(--corSecundaria);
+}
+
+.cabecalho {
+    padding: 2% 0 0 15%;
+}
+
+.cabecalho_menu {
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho_menu_link {
+    font-family: var(--fonteSecundaria);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--corTerciaria);
+    text-decoration: none;
+}
+
+.cabecalho_menu_link:hover {
+    color: var(--corSecundaria);
+    transform: scale(1.1);
+}
+
+.destaqueTitulo {
+    color: var(--corTerciaria);
+}
+
+.apresentacao {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    padding: 5% 15%;
+    gap: 82px;
+}
+
+.apresentacao_conteudo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.apresentacao_conteudo_titulo {
+    font-size: 2.25rem;
+    font-family: var(--fontePrimaria);
+}
+
+.apresentacao_conteudo_subtitulo {
+    font-size: 1.25rem;
+    font-family: var(--fontePrimaria);
+}
+
+.apresentacao_conteudo_texto {
+    font-size: 1.5rem;
+    font-family: var(--fonteSecundaria);
+}
+
+
+.apresentacao_conteudo_botoes_subtitulo {
+    font-family: var(--fontePrimaria);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.apresentacao_conteudo_botoes {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 32px;
+    align-items: center;
+}
+
+.apresentacao_links_navegacao {
+    width: 50%;
+    border-radius: 8px;
+    border: 2px solid var(--corTerciaria);
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: var(--corSecundaria);
+    font-family: var(--fonteSecundaria);
+    font-weight: 600;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+}
+
+.apresentacao_conteudo_botoes_botao:hover {
+    background-color: var(--corHover);
+}
+
+.apresentacao_imagem {
+    width: 50%;
+}
+
+.rodape {
+    color: var(--corSecundaria);
+    background-color: var(--corTerciaria);
+    padding: 24px;
+    text-align: center;
+    font-family: var(--fonteSecundaria);
+    font-size: 1.5rem;
+    font-weight: 400;
+    
+    /*Mantendo o footer sempre no fim da página. Eh gambiarra? Nao sei...*/
+    bottom: 0;
+}
+
+@media (max-width: 1300px) {
+    .apresentacao {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        padding: 5% ;
+    }
+
+    .apresentacao_conteudo {
+        width: auto;
+    }
+
+    .cabecalho {
+        padding: 10%;
+    }
+
+    .cabecalho_menu {
+        gap: 40px;
+    }
+
+    .cabecalho_menu {
+        justify-content: center;
+    }
+}
