@@ -149,7 +149,7 @@ body {
 
     .cabecalho_menu {
         justify-content: center;
-        gap: 1.5rem;
+        gap: 40px;
     }
 }
 
