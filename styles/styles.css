@@ -115,7 +115,7 @@ body {
 }
 
 .apresentacao_imagem {
-    width: 50%;
+    border-radius: 2.5%;
 }
 
 .rodape {
