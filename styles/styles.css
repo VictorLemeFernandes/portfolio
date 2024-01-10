@@ -144,7 +144,7 @@ body {
 
 @media (max-width: 1300px) {
     .apresentacao {
-        flex-direction: column-reverse;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         padding: 5%;
